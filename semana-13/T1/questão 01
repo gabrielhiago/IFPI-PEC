@@ -1,0 +1,14 @@
+def operacao():
+    lista = []
+    mult = 1
+    for item in range(10):
+        elemento = int(input().strip())
+        lista.append(elemento)
+        mult *= elemento
+    print(f'{lista}\n{sum(lista)}\n{mult}')
+
+def main():
+    operacao()
+
+if __name__ == '__main__':
+    main()
