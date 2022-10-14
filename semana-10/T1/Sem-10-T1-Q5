@@ -1,0 +1,22 @@
+def divida_cartao(divida, salario):
+    mes = 10
+    ano = 2016
+    while True:
+        mes += 1
+        if mes == 3:
+            salario += salario * 0.05
+        if mes > 12:
+            mes = 1
+            ano += 1
+        divida += divida * 0.15
+        if divida > salario:
+            break
+    return(f'O valor da dívida irá superar o valor do salário em {mes} / {ano}')
+
+def main():
+    salario = float(input('Digite o valor do salário em R$: ').strip())
+    divida = float(input('Digite o valor da dívida em R$: ').strip())
+    print(divida_cartao(divida, salario))
+
+if __name__ == '__main__':
+    main()
