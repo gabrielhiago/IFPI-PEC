@@ -1,0 +1,17 @@
+def listagem(quant):
+    pares = 0
+    impares = 0
+    for item in range(quant):
+        num = int(input('Digite um número inteiro positivo: '))
+        if num % 2 == 0:
+            pares += 1
+        else:
+            impares += 1
+    return f'Total de nºs pares: {pares}\nTotal de nºs ímpares: {impares}'
+
+def main():
+    q_numeros = int(input('Informe a quantidade de números a ser analisada: '))
+    print(listagem(q_numeros))
+
+if __name__ == '__main__':
+    main()
