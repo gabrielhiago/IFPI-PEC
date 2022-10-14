@@ -1,0 +1,14 @@
+def sequencia(qtd):
+    soma = 0
+    for item in range(qtd):
+        num = int(input('Informe um valor inteiro positivo: ').strip())
+        soma += num
+    media = soma / qtd
+    return f'A média entre os valores lidos é {media}'
+
+def main():
+    quantidade = int(input('Digite a quantidade de termos a ser analisada: ').strip())
+    print(sequencia(quantidade))
+    
+if __name__ == '__main__':
+    main()
