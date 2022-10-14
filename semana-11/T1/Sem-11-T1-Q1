@@ -1,0 +1,18 @@
+def fatorial(num):
+    if num < 0:
+        print('número inválido')
+    elif num == 0 or num == 1:
+        return 1
+    else:
+        fat = 1
+        while num > 1:
+            fat *= num
+            num -= 1
+        return f'O fatorial de {num} é {fat}'
+
+def main():
+    numero = int(input('Digite o valor a ser calculado fatorial: ').strip())
+    print(fatorial(numero))
+
+if __name__ == '__main__':
+    main()
