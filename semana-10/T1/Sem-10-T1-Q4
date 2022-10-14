@@ -1,0 +1,11 @@
+def invertido(num):
+    reversed(num)
+    invertido = ''.join(reversed(num))
+    return f'O valor digitado invertido vale {invertido}'
+
+def main():
+    numero = (input('Digite um valor inteiro qualquer: ').strip())
+    print(invertido(numero))
+
+if __name__ == '__main__':
+    main()
