@@ -1,18 +1,17 @@
-def fatorial(num):
-    if num < 0:
-        print('número inválido')
-    elif num == 0 or num == 1:
-        return 1
-    else:
-        fat = 1
-        while num > 1:
-            fat *= num
-            num -= 1
-        return f'O fatorial de {num} é {fat}'
+def corrida(tartaruga):
+    lebre = 0
+    minutos = 0
+    while True:
+        minutos += 1
+        tartaruga += 1
+        lebre += 10
+        if lebre > tartaruga:
+            break
+    return f' A lebre levará {minutos} minutos para alcançar a tartaruga'
 
 def main():
-    numero = int(input('Digite o valor a ser calculado fatorial: ').strip())
-    print(fatorial(numero))
+    tartaruga = int(input('Digite a metragem de vantagem da tartaruga: ').strip())
+    print(corrida(tartaruga))
 
 if __name__ == '__main__':
     main()
