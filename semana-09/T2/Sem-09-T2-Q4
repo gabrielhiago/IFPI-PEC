@@ -1,0 +1,13 @@
+def cancao():
+    for i in range(99, 0, -11):
+        if i > 11:
+            print(f'{i} bugs no software, pegue onze deles e conserte...\nTecle "Ctrl+F5"')
+        else:
+            print(f'{i} bugs no software, pegue onze deles e conserte...\nTecle "Ctrl+F5"')
+            print(f'Sem erros no software! Está estabilizado!')
+
+def main():
+    cancao()
+
+if __name__ == '__main__':
+    main()
