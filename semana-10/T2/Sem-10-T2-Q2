@@ -1,0 +1,24 @@
+def idades():
+    pessoas = 0
+    soma_id = 0
+    maior_id = 1
+    menor_id = 999
+    while True:
+        idade = int(input('Digite a idade da pessoa: ').strip())
+        if idade != 0:
+            soma_id += idade
+            pessoas += 1
+            if idade > maior_id:
+                maior_id = idade
+            if idade < menor_id:
+                menor_id = idade
+        else:
+            break
+        id_media = soma_id / pessoas
+    return f'qtd. de pessoas: {pessoas}\nmedia das idades: {id_media}\nmaior idade: {maior_id}\nmenor idade: {menor_id}'
+
+def main():
+    print(idades())
+
+if __name__ == '__main__':
+    main()
