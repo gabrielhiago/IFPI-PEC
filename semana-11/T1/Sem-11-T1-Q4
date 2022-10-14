@@ -1,0 +1,13 @@
+def num_sorte(nasc):
+    soma = 0
+    while nasc > 0:
+        soma += nasc % 10
+        nasc = int(nasc / 10)
+    return f'Seu número da sorte é {soma}'
+
+def main():
+    data = int(input('Digite sua data de nascimento no formato ddmmaaa: ').strip())
+    print(num_sorte(data))
+
+if __name__ == '__main__':
+    main()
