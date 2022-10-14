@@ -1,0 +1,14 @@
+def maior_deles(qtd):
+    maior = 0
+    for termo in range(qtd):
+        numero = int(input('Digite um número inteiro positivo: ').strip())
+        if numero > maior:
+            maior = numero
+    return maior
+
+def main():
+    quantidade = int(input('Informe a quantidade de termos a ser analizada: ').strip())
+    print(maior_deles(quantidade))
+    
+if __name__ == '__main__':
+    main()
