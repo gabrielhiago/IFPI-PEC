@@ -1,0 +1,15 @@
+def soma_int():
+    soma = 0
+    while True:
+        num = int(input('Digite um número inteiro qualquer: ').strip())
+        if num != 0:
+            soma += num
+        else:
+            break
+    return f'A soma dos valores lidos é: {soma}'
+
+def main():
+    print(soma_int())
+
+if __name__ == '__main__':
+    main()
