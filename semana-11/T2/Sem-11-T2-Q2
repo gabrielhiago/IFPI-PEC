@@ -1,0 +1,23 @@
+def fibonacci(num):
+    n1, n2 = 0, 1
+    contagem = 0
+    if num <= 0:
+        print('insira um valor positivo')
+    elif num == 1:
+        print(f'sequencia fibonacci começando com {num}:')
+        print(n1)
+    else:
+        print('Sequencia Fibonacci')
+        while contagem < num:
+            print(f'{n1}', end = ', ')
+            nth = n1 + n2
+            n1 = n2
+            n2 = nth
+            contagem += 1
+
+def main():
+    numero = int(input('numero: ').strip())
+    fibonacci(numero)
+
+if __name__ == '__main__':
+    main()
